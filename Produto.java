@@ -3,9 +3,9 @@ package ExerVenda;
 public class Produto {
     int codigo;
     String descriscao;
-    int valorVenda;
-    int valorCusto;
-    bool promocao;
+    float valorVenda;
+    float valorCusto;
+    boolean promocao;
 
     public int getCodigo() {
         return codigo;
@@ -23,7 +23,7 @@ public class Produto {
         this.descriscao = descriscao;
     }
 
-    public int getValorVenda() {
+    public float getValorVenda() {
         return valorVenda;
     }
 
@@ -31,7 +31,7 @@ public class Produto {
         this.valorVenda = valorVenda;
     }
 
-    public int getValorCusto() {
+    public float getValorCusto() {
         return valorCusto;
     }
 
@@ -39,15 +39,15 @@ public class Produto {
         this.valorCusto = valorCusto;
     }
 
-    public bool getPromocao() {
+    public boolean getPromocao() {
         return promocao;
     }
 
-    public void setPromocao(bool promocao) {
+    public void setPromocao(boolean promocao) {
         this.promocao = promocao;
     }
 
-    public Produto(int codigo, String descriscao, int valorVenda, int valorCusto, bool promocao) {
+    public Produto(int codigo, String descriscao, int valorVenda, int valorCusto, boolean promocao) {
         this.codigo = codigo;
         this.descriscao = descriscao;
         this.valorVenda = valorVenda;
