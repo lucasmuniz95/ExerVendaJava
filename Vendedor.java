@@ -1,5 +1,7 @@
 package ExerVenda;
 
+
+
 public class Vendedor {
     String nome;
     int codigo;
