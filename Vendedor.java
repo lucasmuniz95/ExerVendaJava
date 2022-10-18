@@ -1,12 +1,10 @@
 package ExerVenda;
 
-
-
-public class Vendedor {
-    String nome;
-    int codigo;
-    public float comissao;
-    String endereco;
+class Vendedor{
+    private String nome;
+    private int codigo;
+    private static float comissao;
+    private String endereco;
 
     public Vendedor(String nome, int codigo, String endereco) {
         this.nome = nome;
@@ -30,12 +28,12 @@ public class Vendedor {
         this.codigo = codigo;
     }
 
-    public float getComissao() {
+    public static float getComissao() {
         return comissao;
     }
 
-    public void setComissao(float comissao) {
-        this.comissao = comissao;
+    public static void setComissao(float comissao) {
+        Vendedor.comissao = comissao;
     }
 
     public String getEndereco() {
