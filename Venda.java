@@ -43,8 +43,7 @@ public class Venda {
     }
 
 
-    public void efetuarDesconto(float descontoP){
-        descontoParaPorcetagem(float desconto;);
+    public void efetuarDesconto(float desconto){
         float valorReal = valor - desconto;
         float valoresProdutos = valorReal / quantidadeItens;
         if (valoresProdutos < getProduto().getValorCusto()){
@@ -65,11 +64,11 @@ public class Venda {
     public  void Imprimir(){
         System.out.println("Codigo do vendedor: " + getVendedor().getCodigo() + " - Nome: " + getVendedor().getNome() + " - Comissão: " + Vendedor.comissao);
         System.out.println("Quantidade de itens vendidos: " + quantidadeItens);
-        System.out.println("Codigo do Produto: " + getc + " - Descrisção do produto: " + produto.descriscao);
-        System.out.println("Valor de venda do produto: " + produto.valorVenda / quantidadeItens);
-        System.out.println("Produto está em promoção: " + produto.promocao);
+        System.out.println("Codigo do Produto: " + getProduto().getCodigoProduto() + " - Descrisção do produto: " + getProduto().getDescricao());
+        System.out.println("Valor de venda do produto: " + getProduto().getValorVenda() / quantidadeItens);
+        System.out.println("Produto está em promoção: " + getProduto().isPromocao());
         System.out.println("Valor do desconto sobre o produto: " + efetuarDesconto(desconto));
-        System.out.println("Valor total da venda: " + produto.valorVenda);
+        System.out.println("Valor total da venda: " + getProduto().getValorVenda());
     }
 
 }
