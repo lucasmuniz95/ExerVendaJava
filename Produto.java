@@ -1,33 +1,41 @@
 package ExerVenda;
 
-public class Produto {
-    int codigo;
-    String descriscao;
-    float valorVenda;
-    float valorCusto;
-    boolean promocao;
+class Produto {
+    private int codigoProduto;
+    private String descricao;
+    private float valorVenda;
+    private float valorCusto;
+    private boolean promocao;
 
-    public int getCodigo() {
-        return codigo;
+    public Produto(int codigoProduto, String descricao, float valorVenda, float valorCusto, boolean promocao) {
+        this.codigoProduto = codigoProduto;
+        this.descricao = descricao;
+        this.valorVenda = valorVenda;
+        this.valorCusto = valorCusto;
+        this.promocao = promocao;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public int getCodigoProduto() {
+        return codigoProduto;
     }
 
-    public String getDescriscao() {
-        return descriscao;
+    public void setCodigoProduto(int codigoProduto) {
+        this.codigoProduto = codigoProduto;
     }
 
-    public void setDescriscao(String descriscao) {
-        this.descriscao = descriscao;
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public float getValorVenda() {
         return valorVenda;
     }
 
-    public void setValorVenda(int valorVenda) {
+    public void setValorVenda(float valorVenda) {
         this.valorVenda = valorVenda;
     }
 
@@ -35,23 +43,15 @@ public class Produto {
         return valorCusto;
     }
 
-    public void setValorCusto(int valorCusto) {
+    public void setValorCusto(float valorCusto) {
         this.valorCusto = valorCusto;
     }
 
-    public boolean getPromocao() {
+    public boolean isPromocao() {
         return promocao;
     }
 
     public void setPromocao(boolean promocao) {
-        this.promocao = promocao;
-    }
-
-    public Produto(int codigo, String descriscao, int valorVenda, int valorCusto, boolean promocao) {
-        this.codigo = codigo;
-        this.descriscao = descriscao;
-        this.valorVenda = valorVenda;
-        this.valorCusto = valorCusto;
         this.promocao = promocao;
     }
 }
