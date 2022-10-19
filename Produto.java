@@ -6,6 +6,9 @@ class Produto {
     private float valorVenda;
     private float valorCusto;
     private boolean promocao;
+    
+    public Produto(){
+    }
 
     public Produto(int codigoProduto, String descricao, float valorVenda, float valorCusto, boolean promocao) {
         this.codigoProduto = codigoProduto;
