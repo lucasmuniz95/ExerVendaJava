@@ -5,6 +5,9 @@ class Vendedor{
     private int codigo;
     private static float comissao;
     private String endereco;
+    
+    public Vendedor(){
+    }
 
     public Vendedor(String nome, int codigo, String endereco) {
         this.nome = nome;
